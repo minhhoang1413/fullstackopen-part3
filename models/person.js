@@ -1,11 +1,11 @@
 const mongoose = require("mongoose")
 const uniqueValidator = require("mongoose-unique-validator")
-const url = process.env.MONGODB_URI
-mongoose.connect(url).then(result => {
-    console.log("connected to ", url)
-}).catch(error => {
-    console.log("error connecting MONGODB ", error.message)
-})
+// const url = process.env.MONGODB_URI
+// mongoose.connect(url).then(result => {
+//     console.log("connected to ", url)
+// }).catch(error => {
+//     console.log("error connecting MONGODB ", error.message)
+// })
 const personSchema = new mongoose.Schema({
 	name: {
 		type: String,
